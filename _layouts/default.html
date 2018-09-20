@@ -22,12 +22,6 @@
           <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
           <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
 
-          {% if site.show_downloads %}
-            <section id="downloads">
-              <a class="zip_download_link" href="{{ site.github.zip_url }}">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
-            </section>
-          {% endif %}
         </header>
     </div>
 
@@ -39,11 +33,17 @@
     </div>
 
     <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Reference: Machine Learning with R Lantz, Brett. Machine learning with R. Packt Publishing Ltd, 2013.</p>
-        <p>Posted by: Kevin Naik</p>
-      </footer>
+    <div class="col s12 m12">
+      <footer class="page-footer" style="background-color: #5c6bc0;">
+
+            <div class="footer-copyright" style="background-color: #5c6bc0;">
+                <div class="container">
+                    © 2017 Kevin Naik
+                    <a class="grey-text text-lighten-4 right" href="mailto:kevinnaik@gmail.com"><span><i class="tiny material-icons">mail</i></span>  kevinnaik@gmail.com</a>
+                </div>
+            </div>
+        </footer>
+
     </div>
 
     {% if site.google_analytics %}
